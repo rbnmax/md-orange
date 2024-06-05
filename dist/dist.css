@@ -1,24 +1,25 @@
 :root {
-  --background-1: #332211; /* Dark orange */
-  --background-2: #442b1a; /* Slightly darker orange */
-  --foreground-color: #f5f5f5; /* Light for contrast */
-  --border-color: #221810; /* Dark border for separation */
-  --highlight-color: #f08030; /* Lighter orange for highlight */
-  --highlight-contrast: #ffffff; /* White for highlight contrast */
-  --sn-stylekit-theme-type: dark;  /* Change to dark theme */
-  --sn-stylekit-theme-name: custom-orange;  /* Optional custom name */
+  --background-1: #1e1e1e; /* Dark background */
+  --background-2: #2d2d2d; /* Slightly darker background */
+  --foreground-color: #dddcdc; /* Light text for contrast */
+  --border-color: #000000; /* Black border */
+  --highlight-color: #f08030; /* Orange highlight */
+  --highlight-contrast: #ffffff; /* White highlight contrast */
   
-  --sn-stylekit-passive-color-0: #d3d3d3;
-  --sn-stylekit-passive-color-1: #cccccc;
-  --sn-stylekit-passive-color-2: #bebebe;
-  --sn-stylekit-passive-color-3: #777777;
-  --sn-stylekit-passive-color-4: #666666;
-  --sn-stylekit-passive-color-4-opacity-variant: #5555553d;
-  --sn-stylekit-passive-color-5: #444444;
-  --sn-stylekit-passive-color-6: #333333;
-  --sn-stylekit-passive-color-super-light: #222222;
+  /* Replace all green colors with similar brightness orange */
+  --sn-stylekit-info-color: #e8983b; /* Orange for info */
+  --sn-stylekit-neutral-color: #e8983b; /* Orange for neutral */
+  --sn-stylekit-success-color: #87d37c; /* Light green to light orange */
+  --sn-stylekit-warning-color: #e06c75; /* Green to red-orange */
+  --sn-stylekit-danger-color: #c02942; /* Dark green to dark red */
+  --sn-stylekit-scrollbar-thumb-color: #e8983b; /* Orange for scrollbar thumb */
+  --sn-desktop-titlebar-ui-hover-color: #f08030; /* Orange for hover highlight */
   
-  }
+  --sn-stylekit-theme-type: dark; /* Dark theme */
+  
+  /* Remove most extra parameters for cleaner theme */
+  /* No need for greyscale variables or accessory tint colors */
+}
 
 #notes-column .note.selected,
 .notes .note.selected {
@@ -41,9 +42,9 @@
 }
 
 .sn-component__titlebar {
-  background-color: var(--sn-desktop-titlebar-bg-color);
-  border-color: var(--sn-desktop-titlebar-border-color);
-  color: var(--sn-desktop-titlebar-ui-color);
+  background-color: var(--background-1);
+  border-color: var(--border-color);
+  color: var(--foreground-color);
 }
 
 .sn-component__titlebar:hover {
