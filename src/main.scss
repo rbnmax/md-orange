@@ -1,24 +1,70 @@
 :root {
-  --background-1: #1e1e1e; /* Dark background */
-  --background-2: #2d2d2d; /* Slightly darker background */
-  --foreground-color: #dddcdc; /* Light text for contrast */
-  --border-color: #000000; /* Black border */
-  --highlight-color: #f08030; /* Orange highlight */
-  --highlight-contrast: #ffffff; /* White highlight contrast */
-  
-  /* Replace all green colors with similar brightness orange */
-  --sn-stylekit-info-color: #e8983b; /* Orange for info */
-  --sn-stylekit-neutral-color: #e8983b; /* Orange for neutral */
-  --sn-stylekit-success-color: #87d37c; /* Light green to light orange */
-  --sn-stylekit-warning-color: #e06c75; /* Green to red-orange */
-  --sn-stylekit-danger-color: #c02942; /* Dark green to dark red */
-  --sn-stylekit-scrollbar-thumb-color: #e8983b; /* Orange for scrollbar thumb */
-  --sn-desktop-titlebar-ui-hover-color: #f08030; /* Orange for hover highlight */
-  
-  --sn-stylekit-theme-type: dark; /* Dark theme */
-  
-  /* Remove most extra parameters for cleaner theme */
-  /* No need for greyscale variables or accessory tint colors */
+  --background-1: #1e1e1e;
+  --background-2: #2d2d2d;
+  --foreground-color: #dddcdc;
+  --border-color: #000000;
+  --highlight-color: #ff8c00; /* Changed to orange */
+  --highlight-contrast: #ff8c00; /* Changed to orange */
+  --sn-stylekit-info-color: #ff8c00; /* Changed to orange */
+  --sn-stylekit-info-contrast-color: #cccccc;
+  --sn-stylekit-neutral-color: #ff8c00; /* Changed to orange */
+  --sn-stylekit-neutral-contrast-color: #cccccc;
+  --sn-stylekit-success-color: #cc7000; /* Changed to darker orange */
+  --sn-stylekit-success-contrast-color: #cccccc;
+  --sn-stylekit-warning-color: #68248f;
+  --sn-stylekit-warning-contrast-color: #bbbbbb;
+  --sn-stylekit-danger-color: #8f2424;
+  --sn-stylekit-danger-contrast-color: #bbbbbb;
+  --sn-stylekit-shadow-color: var(--background-2);
+  --sn-stylekit-background-color: var(--background-1);
+  --sn-stylekit-foreground-color: var(--foreground-color);
+  --sn-stylekit-border-color: var(--border-color);
+  --sn-stylekit-paragraph-text-color: var(--foreground-color);
+  --sn-stylekit-contrast-background-color: var(--background-2);
+  --sn-stylekit-contrast-foreground-color: var(--foreground-color);
+  --sn-stylekit-contrast-border-color: var(--border-color);
+  --sn-stylekit-secondary-background-color: var(--background-1);
+  --sn-stylekit-secondary-foreground-color: var(--foreground-color);
+  --sn-stylekit-secondary-border-color: var(--border-color);
+  --sn-stylekit-secondary-contrast-background-color: var(--background-2);
+  --sn-stylekit-secondary-contrast-foreground-color: var(--foreground-color);
+  --sn-stylekit-secondary-contrast-border-color: var(--border-color);
+  --sn-stylekit-editor-background-color: var(--background-1);
+  --sn-stylekit-editor-foreground-color: var(--foreground-color);
+  --sn-stylekit-scrollbar-track-border-color: var(--border-color);
+  --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
+  --sn-desktop-titlebar-bg-color: var(--background-1);
+  --sn-desktop-titlebar-border-color: var(--border-color);
+  --sn-desktop-titlebar-ui-color: var(--foreground-color);
+  --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
+  --navigation-item-selected-background-color: #2d2d2d;
+
+  --sn-stylekit-grey-1: #1e1e1e;
+  --sn-stylekit-grey-2: #1e1e1e;
+  --sn-stylekit-grey-3: #1e1e1e;
+  --sn-stylekit-grey-4: #1e1e1e;
+  --sn-stylekit-grey-4-opacity-variant: #bbbec43d;
+  --sn-stylekit-grey-5: #1e1e1e;
+  --sn-stylekit-grey-6: #1e1e1e;
+
+  --sn-stylekit-theme-type: light;
+  --sn-stylekit-theme-name: sn-light;
+  --sn-stylekit-passive-color-0: #939393;
+  --sn-stylekit-passive-color-1: #818181;
+  --sn-stylekit-passive-color-2: #7b7b7b;
+  --sn-stylekit-passive-color-3: #353535;
+  --sn-stylekit-passive-color-4: #2d2d2d;
+  --sn-stylekit-passive-color-4-opacity-variant: #2525253d;
+  --sn-stylekit-passive-color-5: #1e1e1e;
+  --sn-stylekit-passive-color-6: #212121;
+  --sn-stylekit-passive-color-super-light: #141414;
+
+  --sn-stylekit-accessory-tint-color-1: #cc7000; /* Changed to darker orange */
+  --sn-stylekit-accessory-tint-color-2: #ea6595;
+  --sn-stylekit-accessory-tint-color-3: #ebad00;
+  --sn-stylekit-accessory-tint-color-4: #7049cf;
+  --sn-stylekit-accessory-tint-color-5: #ff8c00; /* Changed to orange */
+  --sn-stylekit-accessory-tint-color-6: #f28c52;
 }
 
 #notes-column .note.selected,
@@ -42,9 +88,9 @@
 }
 
 .sn-component__titlebar {
-  background-color: var(--background-1);
-  border-color: var(--border-color);
-  color: var(--foreground-color);
+  background-color: var(--sn-desktop-titlebar-bg-color);
+  border-color: var(--sn-desktop-titlebar-border-color);
+  color: var(--sn-desktop-titlebar-ui-color);
 }
 
 .sn-component__titlebar:hover {
